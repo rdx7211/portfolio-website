@@ -1,0 +1,123 @@
+:root {
+    --accent1: #7c3aed;
+    --accent2: #06b6d4;
+}
+
+.hero-font {
+    font-family: 'Merriweather', serif;
+}
+
+.ui-font {
+    font-family: 'Poppins', sans-serif;
+}
+
+.blob {
+    filter: blur(50px);
+    opacity: .45;
+    z-index: -1;
+}
+
+.floaty {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-link {
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 4px;
+}
+
+.nav-link:hover {
+    color: var(--accent2);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent2);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .3s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent1), transparent);
+    opacity: .1;
+}
+
+.animated-lift {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.animated-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: rgba(6, 182, 212, 0.1);
+    color: rgba(107, 222, 246, 0.9);
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 2px;
+    border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* NEW classes for the contact form */
+.form-input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent2);
+    box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.5);
+}
+
+.form-button {
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to right, var(--accent1), var(--accent2));
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}

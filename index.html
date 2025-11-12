@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Souvik Choudhury - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-b from-[#061022] to-[#04101b] text-gray-200 ui-font overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/30">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden">
+                    <img src="assets/lone_wolf.png" alt="Lone Wolf Logo" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <div class="text-lg font-semibold leading-tight">Souvik Choudhury</div>
+                    <div class="text-sm text-gray-400">Data Scientist</div>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="nav-link text-sm">About</a>
+                <a href="#experience" class="nav-link text-sm">Experience</a>
+                <a href="#projects" class="nav-link text-sm">Projects</a>
+                <a href="#skills" class="nav-link text-sm">Skills</a>
+                <a href="#contact" class="nav-link text-sm">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="min-h-screen flex items-center pt-28 pb-12">
+            <div class="max-w-7xl mx-auto w-full px-6 relative">
+                <svg class="absolute -right-20 -top-20 w-[400px] h-[400px] blob floaty" viewBox="0 0 600 600" xmlns="http://www.w.org/2000/svg">
+                    <defs><linearGradient id="g1"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs>
+                    <path d="M120,-148C155,-127,187,-96,201,-60C215,-24,211,17,193,51C175,85,142,113,103,136C64,159,19,177,-20,172C-59,167,-92,139,-124,108C-156,76,-187,41,-190,3C-193,-35,-168,-75,-137,-103C-106,-130,-69,-145,-33,-156C3,-168,39,-176,78,-168C117,-161,78,-170,120,-148Z" fill="url(#g1)" />
+                </svg>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-up">
+                        <p class="text-lg md:text-xl text-cyan-300 font-semibold mb-2 hero-font">Hi, my name is</p>
+                        <h1 class="text-4xl md:text-6xl font-bold text-white mb-2 hero-font">Souvik Choudhury.</h1>
+                        <h2 class="text-3xl md:text-5xl font-bold text-gray-400 mb-8 hero-font">I build things with data.</h2>
+                        
+                        <div class="flex items-center gap-4">
+                            <a href="#projects" class="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-cyan-400 text-white font-semibold shadow-lg animated-lift">
+                                View My Work
+                            </a>
+                            <a href="https://github.com/rdx7211" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-lg border border-white/20 text-slate-200 font-semibold animated-lift">
+                                My GitHub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <aside class="flex justify-center" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="p-4 glass rounded-2xl w-full max-w-sm">
+                            <img src="assets/image.png" alt="Souvik Choudhury working at a desk" class="rounded-xl w-full">
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                <p class="text-lg text-gray-300">
+                    A self driven and enthusiastic individual dedicated to developing comprehensive products that create lasting impact. I am passionate about building sustainable and scalable social and technical systems, consistently striving to contribute to solutions that solve real-world problems effectively.
+                </p>
+            </div>
+        </section>
+
+        <div class="section-divider my-8"></div>
+
+        <section id="experience" class="py-20">
+            <div class="max-w-5xl mx-auto px-6" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-12 text-center">Experience</h2>
+                <div class="glass p-8 rounded-2xl animated-lift">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-semibold text-cyan-300">BCG Data Science Job Simulation</h3>
+                            <p class="text-gray-400">Data Science Virtual Internship</p>
+                        </div>
+                        <p class="text-gray-400 font-medium">(May - July) 2025</p>
+                    </div>
+                    <ul class="mt-4 list-disc list-inside text-gray-300 space-y-2">
+                        <li>Developed a churn prediction strategy for an energy client by analyzing customer data to identify key churn drivers using Python (Pandas, NumPy).</li>
+                        <li>Engineered a Random Forest model to identify at-risk customers, achieving a <strong>50% recall</strong> rate, enabling targeted retention campaigns.</li>
+                        <li>Delivered actionable business insights through data visualization, outlining a strategic approach to mitigate customer churn.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider my-8"></div>
+
+        <section id="projects" class="py-20">
+            <div class="max-w-7xl mx-auto px-6" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                    
+                    <a href="https://github.com/rdx7211/End-to-End-GenAi-Medical-chatbot" target="_blank" rel="noopener noreferrer" class="block">
+                        <article class="glass p-6 rounded-2xl animated-lift flex flex-col h-full" data-aos="fade-up">
+                            <img src="assets/medibot.png" alt="GenAI Medical Chatbot" class="project-image">
+                            <h3 class="text-xl font-semibold text-cyan-300 mt-4 mb-2">End-to-End GenAI Medical Chatbot</h3>
+                            <p class="text-gray-300 mb-4 flex-grow">Engineered a medical chatbot using a RAG architecture with LLaMA 2, enabling nuanced, context-aware responses. Deployed the full-stack application on AWS EC2 and established a CI/CD pipeline.</p>
+                            <div>
+                                <span class="tech-tag">Python</span><span class="tech-tag">LangChain</span><span class="tech-tag">LLaMA</span><span class="tech-tag">Pinecone</span><span class="tech-tag">Flask</span><span class="tech-tag">AWS</span><span class="tech-tag">Docker</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="https://github.com/rdx7211/System-Threat-Forecaster" target="_blank" rel="noopener noreferrer" class="block">
+                        <article class="glass p-6 rounded-2xl animated-lift flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+                            <img src="assets/system-threat.png" alt="System Threat Forecaster" class="project-image">
+                            <h3 class="text-xl font-semibold text-cyan-300 mt-4 mb-2">System Threat Forecaster</h3>
+                            <p class="text-gray-300 mb-4 flex-grow">Built a malware prediction tool by training a LightGBM pipeline on system telemetry data, achieving 62% accuracy. Developed a Flask web app to serve the model for real-time predictions.</p>
+                            <div>
+                                <span class="tech-tag">Python</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">XGBoost</span><span class="tech-tag">LightGBM</span><span class="tech-tag">Flask</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="https://github.com/rdx7211/financial-investment-risk-robo-advisor" target="_blank" rel="noopener noreferrer" class="block">
+                        <article class="glass p-6 rounded-2xl animated-lift flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+                            <img src="assets/financial.png" alt="Financial Robo-Advisor" class="project-image">
+                            <h3 class="text-xl font-semibold text-cyan-300 mt-4 mb-2">Financial Investment Risk & Robo-Advisor</h3>
+                            <p class="text-gray-300 mb-4 flex-grow">Created a dual-system tool that first classifies an investor's risk tolerance using an ML model, then uses Markowitz's Efficient Frontier to recommend optimized investment portfolios.</p>
+                            <div>
+                                <span class="tech-tag">Python</span><span class="tech-tag">Streamlit</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">Portfolio Optimization</span>
+                            </div>
+                        </article>
+                    </a>
+
+                </div>
+                 <div class="text-center mt-12">
+                    <a href="https://github.com/rdx7211" target="_blank" class="text-cyan-300 font-semibold hover:underline">More projects available on my GitHub &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider my-8"></div>
+
+        <section id="skills" class="py-20">
+            <div class="max-w-5xl mx-auto px-6" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-12 text-center">Technical Skills</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-cyan-300 mb-3">Languages</h3>
+                        <div class="flex flex-wrap gap-2">
+                           <span class="tech-tag">Python</span><span class="tech-tag">SQL</span><span class="tech-tag">C++</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-cyan-300 mb-3">ML & Data Science</h3>
+                        <div class="flex flex-wrap gap-2">
+                           <span class="tech-tag">Scikit-learn</span><span class="tech-tag">PyTorch</span><span class="tech-tag">Pandas</span><span class="tech-tag">NumPy</span><span class="tech-tag">LangChain</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">Seaborn</span><span class="tech-tag">XGBoost</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-cyan-300 mb-3">Developer Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                           <span class="tech-tag">Git</span><span class="tech-tag">GitHub</span><span class="tech-tag">Docker</span><span class="tech-tag">AWS</span><span class="tech-tag">Flask</span><span class="tech-tag">Streamlit</span><span class="tech-tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20">
+            <div class="max-w-3xl mx-auto px-6 text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-gray-300 mb-8">Have a question or want to work together? Leave a message below or connect with me on LinkedIn.</p>
+                
+                <div class="flex justify-center gap-6 mb-12">
+                    <a href="https://www.linkedin.com/in/souvik-choudhury-48a426270/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-white/5 border border-white/10 text-white font-semibold shadow-lg animated-lift">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.62 1.62 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.1 1.16 3.1 3.99z"></path></svg>
+                        LinkedIn
+                    </a>
+                </div>
+
+                <form action="https://formspree.io/f/myznkpvn" method="POST" class="max-w-xl mx-auto text-left space-y-6">
+                    <div>
+                        <label for="email" class="block text-gray-400 text-sm font-medium mb-2">Your Email</label>
+                        <input type="email" name="email" id="email" class="form-input" placeholder="you@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-400 text-sm font-medium mb-2">Message</label>
+                        <textarea name="message" id="message" rows="4" class="form-input" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="form-button animated-lift">Send Message</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-6 text-center text-gray-400 text-sm">
+        © 2025 Souvik Choudhury
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 900, once: true});
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
