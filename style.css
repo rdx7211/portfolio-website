@@ -121,3 +121,37 @@
     border: none;
     cursor: pointer;
 }
+
+/* --- NEW: ANIMATED COLOR-SHIFTING BLOB (DIMMER) --- */
+#blob {
+    /*
+      This is the change:
+      We are starting with a *very* transparent version of your
+      cyan color (only 15% opacity) so it's much more subtle.
+    */
+    background: radial-gradient(
+        800px circle at var(--x) var(--y),
+        rgba(6, 182, 212, 0.15), /* Was 100% bright, now 15% */
+        transparent 50% /* Fade out faster */
+    );
+    
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    
+    /* This animation will now rotate a much fainter color */
+    animation: color-shift 10s linear infinite;
+}
+
+@keyframes color-shift {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

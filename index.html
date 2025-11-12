@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gradient-to-b from-[#061022] to-[#04101b] text-gray-200 ui-font overflow-x-hidden">
+    
+    <div id="blob"></div>
+
     <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/30">
         <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#home" class="flex items-center gap-4">
@@ -35,7 +38,7 @@
     <main id="home">
         <section class="min-h-screen flex items-center pt-28 pb-12">
             <div class="max-w-7xl mx-auto w-full px-6 relative">
-                <svg class="absolute -right-20 -top-20 w-[400px] h-[400px] blob floaty" viewBox="0 0 600 600" xmlns="http://www.w.org/2000/svg">
+                <svg class="absolute -right-20 -top-20 w-[400px] h-[400px] blob floaty" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                     <defs><linearGradient id="g1"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs>
                     <path d="M120,-148C155,-127,187,-96,201,-60C215,-24,211,17,193,51C175,85,142,113,103,136C64,159,19,177,-20,172C-59,167,-92,139,-124,108C-156,76,-187,41,-190,3C-193,-35,-168,-75,-137,-103C-106,-130,-69,-145,-33,-156C3,-168,39,-176,78,-168C117,-161,78,-170,120,-148Z" fill="url(#g1)" />
                 </svg>
@@ -125,7 +128,7 @@
                             </div>
                         </article>
                     </a>
-
+                    
                     <a href="https://github.com/rdx7211/financial-investment-risk-robo-advisor" target="_blank" rel="noopener noreferrer" class="block">
                         <article class="glass p-6 rounded-2xl animated-lift flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
                             <img src="assets/financial.png" alt="Financial Robo-Advisor" class="project-image">
@@ -137,10 +140,32 @@
                         </article>
                     </a>
 
+                    <a href="https://github.com/rdx7211/End-to-End-Chest-cancer-classification-project-" target="_blank" rel="noopener noreferrer" class="block">
+                        <article class="glass p-6 rounded-2xl animated-lift flex flex-col h-full" data-aos="fade-up" data-aos-delay="300">
+                            <img src="assets/chest.png" alt="Chest Cancer Classification Project" class="project-image">
+                            <h3 class="text-xl font-semibold text-cyan-300 mt-4 mb-2">End-to-End Chest Cancer Classification</h3>
+                            <p class="text-gray-300 mb-4 flex-grow">A complete MLOps pipeline for classifying chest cancer from medical images. Features DVC, MLflow for experiment tracking, and full CI/CD deployment on AWS EC2 using GitHub Actions and Docker.</p>
+                            <div>
+                                <span class="tech-tag">Python</span><span class="tech-tag">Deep Learning</span><span class="tech-tag">DVC</span><span class="tech-tag">MLflow</span><span class="tech-tag">AWS</span><span class="tech-tag">Docker</span><span class="tech-tag">CI/CD</span>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://github.com/rdx7211/End-to-End-E-commerce-Book-Recommender-System" target="_blank" rel="noopener noreferrer" class="block">
+                        <article class="glass p-6 rounded-2xl animated-lift flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
+                            <img src="assets/book.png" alt="Book Recommender System" class="project-image">
+                            <h3 class="text-xl font-semibold text-cyan-300 mt-4 mb-2">Book Recommender System</h3>
+                            <p class="text-gray-300 mb-4 flex-grow">Developed a book recommendation engine using Collaborative Filtering techniques. The system is designed for scalability and deployed as a web service.</p>
+                            <div>
+                                <span class="tech-tag">Python</span><span class="tech-tag">Collaborative Filtering</span><span class="tech-tag">Machine Learning</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">Web Deployment</span>
+                            </div>
+                        </article>
+                    </a>
+
                 </div>
                  <div class="text-center mt-12">
                     <a href="https://github.com/rdx7211" target="_blank" class="text-cyan-300 font-semibold hover:underline">More projects available on my GitHub &rarr;</a>
-                </div>
+                 </div>
             </div>
         </section>
 
@@ -207,16 +232,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({duration: 900, once: true});
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
